@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;700&display=swap" rel="stylesheet">
+    <title>Super Mario</title>
+  </head>
+  <body>
+
+<div class="video-mario">
+
+    <video src="video.mp4" autoplay muted loop> </video>
+    <div class="mascara-video"></div>
+         
+    </video>
+</div>
+
+    <div class="caixa-principal">
+
+      <img src="logo.png" alt="logo super mario" class="logo-mario" />
+
+      <p>Encanadores Mario & Luigi- Resolvendo seus problemas com Estilo!</p>
+      <p>
+        Voce ja se encontrou em uma situacao de emergencia com encanamento ?
+        Vazamentos inesperados,canos intupidos ou torneiras que nao param de
+        pingar? Nao se preocupe, porque estamos aqui para salvar seu dia!
+        Apresentamos a voces os encanadores mais famosos do reino dos cogumelos.
+      </p>
+
+      <button onclick="cliqueiNoBotao()">Fale conosco</button>
+    </div>
+    </div>
+
+    <img src="mario.png" alt="logo mario" class="imagem-mario" />
+
+
+<form class="fale-conosco"  action=https://formsubmit.co/palomarlima999@gmail.com  method="POST">
+<input placeholder="Seu Nome" type="text" name="Nome">
+<input placeholder="Seu Telefone" type="tel" name="telefone">
+<textarea placeholder="Digite seu Problema aqui" name="info"></textarea>
+<button onclick="sumirFormulario">Enviar Formulario</button>
+
+</form>
+<div class="mascara-form"></div>
+
+  </body>
+
+  <script>
+let formulario = document.querySelector(".fale-conosco")
+let mascara = document.querySelector(".mascara-form")
+
+function cliqueiNoBotao(){
+        formulario.style.left = "700px"
+        mascara.style.visibility = "visible"
+        
+    }
+    function sumirFormulario(){
+        formulario.style.left = "-320px"
+        mascara.style.visibility = "hidden"
+    }
+
+  </script>
+</html>
